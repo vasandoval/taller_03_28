@@ -1,5 +1,5 @@
 <?php
-class Calculadora {
+class CalculadoraBasica {
     public function calcular(float $a, float $b, string $op): float|string {
         return match($op) {
             '+'  => $a + $b,

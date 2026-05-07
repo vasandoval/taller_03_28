@@ -1,4 +1,7 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
 
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -126,6 +129,28 @@ button.peligro:hover { background: #fecaca; }
     border-left: 2px solid #f97316;
 }
 .arbol li:last-child::after { height: 50%; }
+/* --- Historial (7_calculadora) --- */
+.historial {
+    margin-top: 1.5rem;
+}
+
+.historial-titulo {
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.historial-lista {
+    margin-left: 16px;
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 2;
+}
+
+.historial-form {
+    margin-top: 10px;
+}
+
 .arbol > ul > li::before,
 .arbol > ul > li::after { display: none; }
 .arbol span {
@@ -136,4 +161,69 @@ button.peligro:hover { background: #fecaca; }
     border-radius: 20px;
     font-weight: 600;
     font-size: 0.85rem;
+}
+
+/* --- Árbol binario - nodos (6_arbol) --- */
+.arbol {
+    margin-top: 14px;
+}
+
+.arbol-nodo-wrap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 6px;
+}
+
+.arbol-nodo {
+    width: 36px;
+    height: 36px;
+    background: #f97316;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.arbol-linea-v {
+    width: 2px;
+    height: 14px;
+    background: #f97316;
+}
+
+.arbol-linea-v--izq {
+    margin-left: auto;
+}
+
+.arbol-linea-v--der {
+    margin-right: auto;
+}
+
+.arbol-linea-h {
+    width: 40px;
+    height: 2px;
+    background: #f97316;
+    align-self: flex-start;
+}
+
+.arbol-hijos {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.arbol-rama-izq,
+.arbol-rama-der {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arbol-rama-sola {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }

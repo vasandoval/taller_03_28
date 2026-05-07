@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $a  = (float)$_POST['num1'];
         $b  = (float)$_POST['num2'];
         $op = $_POST['operacion'];
-        $resultado = (new Calculadora())->calcular($a, $b, $op);
+        $resultado = (new CalculadoraBasica())->calcular($a, $b, $op);
         $_SESSION['historial'][] = "$a $op $b = $resultado";
     }
 }
@@ -58,14 +58,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endif; ?>
 
         <?php if (!empty($_SESSION['historial'])): ?>
-        <div style="margin-top:1.5rem">
-            <h3 style="font-size:0.88rem; font-weight:600; margin-bottom:8px">Historial</h3>
-            <ul style="margin-left:16px; font-size:0.85rem; color:#555; line-height:2">
+        <div class="historial">
+            <h3 class="historial-titulo">Historial</h3>
+            <ul class="historial-lista">
                 <?php foreach ($_SESSION['historial'] as $entrada): ?>
                     <li><?= htmlspecialchars($entrada) ?></li>
                 <?php endforeach; ?>
             </ul>
-            <form method="POST" style="margin-top:10px">
+            <form method="POST" class="historial-form">
                 <button type="submit" name="limpiar" class="peligro">Borrar historial</button>
             </form>
         </div>

@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php if ($arbolHTML): ?>
         <div class="resultado">
             <strong>Árbol generado:</strong>
-            <div class="arbol" style="margin-top:14px"><?= $arbolHTML ?></div>
+            <div class="arbol"><?= $arbolHTML ?></div>
         </div>
         <?php endif; ?>
 
