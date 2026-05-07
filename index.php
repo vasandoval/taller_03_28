@@ -7,47 +7,84 @@
 </head>
 <body>
 
-<div class="header">
-    <h1>APLICACIONES</h1>
-    <p>Selecciona una aplicación del menú</p>
-</div>
+<div class="caja">
+    <div class="encabezado">
+        <h1>Taller PHP — POO</h1>
+        <p>Selecciona un ejercicio</p>
+    </div>
 
-<div class="menu-grid">
-    <a class="card" href="1_acronimo/">
-        <span class="badge blue">A</span>
-        <div class="card-title">Convertidor de acrónimos</div>
-        <div class="card-sub">Convierte frases largas a siglas</div>
-    </a>
-    <a class="card" href="2_fibonacci_factorial/">
-        <span class="badge green">Fn</span>
-        <div class="card-title">Fibonacci y factorial</div>
-        <div class="card-sub">Series y cálculos matemáticos</div>
-    </a>
-    <a class="card" href="3_estadistica/">
-        <span class="badge amber">x̄</span>
-        <div class="card-title">Promedio, media y moda</div>
-        <div class="card-sub">Estadística de una serie de números</div>
-    </a>
-    <a class="card" href="4_conjuntos/">
-        <span class="badge pink">∪</span>
-        <div class="card-title">Operaciones de conjuntos</div>
-        <div class="card-sub">Unión, intersección y diferencia</div>
-    </a>
-    <a class="card" href="5_binario/">
-        <span class="badge purple">01</span>
-        <div class="card-title">Conversor a binario</div>
-        <div class="card-sub">Decimal → Binario</div>
-    </a>
-    <a class="card" href="6_arbol/">
-        <span class="badge teal">A B</span>
-        <div class="card-title">Árbol binario</div>
-        <div class="card-sub">Preorden, inorden, postorden</div>
-    </a>
-    <a class="card" href="7_calculadora/">
-        <span class="badge coral">±</span>
-        <div class="card-title">Calculadora</div>
-        <div class="card-sub">Operaciones básicas con historial</div>
-    </a>
+    <div class="lista">
+        <a class="item" href="1_acronimo/">
+            <div class="item-izq">
+                <div class="num">1</div>
+                <div>
+                    <div class="titulo">Convertidor de acrónimos</div>
+                    <div class="subtitulo">Convierte frases largas a siglas</div>
+                </div>
+            </div>
+            <span class="flecha">›</span>
+        </a>
+        <a class="item" href="2_fibonacci_factorial/">
+            <div class="item-izq">
+                <div class="num">2</div>
+                <div>
+                    <div class="titulo">Fibonacci y factorial</div>
+                    <div class="subtitulo">Series y cálculos matemáticos</div>
+                </div>
+            </div>
+            <span class="flecha">›</span>
+        </a>
+        <a class="item" href="3_estadistica/">
+            <div class="item-izq">
+                <div class="num">3</div>
+                <div>
+                    <div class="titulo">Promedio, media y moda</div>
+                    <div class="subtitulo">Estadística de una serie de números</div>
+                </div>
+            </div>
+            <span class="flecha">›</span>
+        </a>
+        <a class="item" href="4_conjuntos/">
+            <div class="item-izq">
+                <div class="num">4</div>
+                <div>
+                    <div class="titulo">Operaciones de conjuntos</div>
+                    <div class="subtitulo">Unión, intersección y diferencia</div>
+                </div>
+            </div>
+            <span class="flecha">›</span>
+        </a>
+        <a class="item" href="5_binario/">
+            <div class="item-izq">
+                <div class="num">5</div>
+                <div>
+                    <div class="titulo">Conversor a binario</div>
+                    <div class="subtitulo">Decimal → Binario</div>
+                </div>
+            </div>
+            <span class="flecha">›</span>
+        </a>
+        <a class="item" href="6_arbol/">
+            <div class="item-izq">
+                <div class="num">6</div>
+                <div>
+                    <div class="titulo">Árbol binario</div>
+                    <div class="subtitulo">Preorden, inorden, postorden</div>
+                </div>
+            </div>
+            <span class="flecha">›</span>
+        </a>
+        <a class="item" href="7_calculadora/">
+            <div class="item-izq">
+                <div class="num">7</div>
+                <div>
+                    <div class="titulo">Calculadora</div>
+                    <div class="subtitulo">Operaciones básicas con historial</div>
+                </div>
+            </div>
+            <span class="flecha">›</span>
+        </a>
+    </div>
 </div>
 
 </body>

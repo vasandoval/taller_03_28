@@ -6,24 +6,31 @@ class Calculadora {
         $this->numero = $numero;
     }
 
+    public function esValido(): bool {
+        return $this->numero >= 0;
+    }
+
     public function fibonacci(): array {
         $serie = [];
-        $a = 0; $b = 1;
+        $a = 0;
+        $b = 1;
         for ($i = 0; $i <= $this->numero; $i++) {
             $serie[] = $a;
-            [$a, $b] = [$b, $a + $b];
+            $temp = $a + $b;
+            $a = $b;
+            $b = $temp;
         }
         return $serie;
     }
 
     public function factorial(): string {
-        if ($this->numero < 0) return "No definido para negativos";
+        if ($this->numero === 0) return "0! = 1";
         $resultado = 1;
-        $serie = ['1'];
-        for ($i = 2; $i <= $this->numero; $i++) {
+        $pasos = [];
+        for ($i = 1; $i <= $this->numero; $i++) {
             $resultado *= $i;
-            $serie[] = $i;
+            $pasos[] = $i;
         }
-        return implode(' × ', $serie) . ' = ' . $resultado;
+        return implode(' × ', $pasos) . ' = ' . $resultado;
     }
 }
